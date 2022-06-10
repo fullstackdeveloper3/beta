@@ -566,8 +566,14 @@ header .container ul > li > a:hover {
 .modo input:nth-of-type(2) {
     background-color: var(--main-color)
 }
-.modo .result {
-    color: var(--main-color);
+.modo #result {
+    background-color: var(--main-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
 }
 .modo .equal {
     margin-top: 50px;

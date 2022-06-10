@@ -564,6 +564,17 @@ header .container ul > li > a:hover {
     background-color: white;
     border: 4px solid var(--main-color);
 }
+.modo label {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--main-color);    
+}
+.modo .info {
+    display: flex;
+    flex-direction: column;
+}
 .modo input:nth-of-type(1) {
 }
 .modo input:nth-of-type(2) {

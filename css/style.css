@@ -601,6 +601,8 @@ header .container ul > li > a:hover {
     border-radius: 5px;
     color: white;
     font-weight: bold;
+    margin: 50px auto;
+    display: block;
 }
 .modo .equal {
     margin-top: 50px;

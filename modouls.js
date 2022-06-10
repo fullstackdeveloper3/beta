@@ -1,5 +1,5 @@
 let p = document.getElementById("equal")
-p.textContent = `0 lightYears`
+p.textContent = `0 Light Years`
 function moduls(m, M) {
 	function oss() {
 		return (m - M + 5)/5

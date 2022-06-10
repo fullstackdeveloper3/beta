@@ -560,6 +560,15 @@ header .container ul > li > a:hover {
 .modo input:focus {
     outline: none;
 }
+.modo input:nth-of-type(1) {
+    background-color: var(--main-color)
+}
+.modo input:nth-of-type(2) {
+    background-color: var(--main-color)
+}
+.modo button {
+    color: var(--main-color);
+}
 .testimonials .box {
     padding: 20px;
     background-color: white;

@@ -32,10 +32,10 @@ document.getElementById("result").onclick = function (e) {
 		userAge = true
 	}
 	if ( userVaild === false || userAge === false) {
-		sita = `not vaild`
+		sita = `Wrong Inputs`
 		
 	}
-	if (sita === `not vaild`) {
+	if (sita === `Wrong Inputs`) {
 		p.textContent = sita
 		e.preventDefault();
 	}else {

@@ -42,3 +42,21 @@ document.getElementById("result").onclick = function (e) {
 		p.textContent = (moduls(+userInput.value, +ageInput.value))
 	}
 }
+let time = 777059000;
+
+let counter = setInterval(() => {
+	 let days = Math.floor (time /  (1000 * 60 * 60 * 24))
+	 console.log(days)
+	 document.querySelector(".days").innerHTML = days < 10 ? `0${days}`: days;
+	 let hr = Math.floor(time % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
+	 console.log(hr)
+	 document.querySelector(".hr").innerHTML = hr < 10 ? `0${hr}`: hr;
+	 let mins = Math.floor(time % ( 1000 * 60 * 60) / ( 1000 * 60))
+	 document.querySelector(".mins").innerHTML = mins < 10 ? `0${mins}`: mins;
+	 let sec = time % ( 1000 * 60) / 1000
+	 document.querySelector(".sec").innerHTML = sec < 10 ? `0${sec}`: sec;
+	 if (time === 0) {
+		clearInterval(counter)
+	 }
+	 time -= 1000
+	}, 1000)
